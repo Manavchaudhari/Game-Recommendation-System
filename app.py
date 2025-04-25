@@ -109,11 +109,17 @@ st.markdown(
 # === UI ===
 st.title("🎮 Steam Game Recommendation System")
 
+# Prepare the game list
 game_list = df_filtered['Name'].dropna().sort_values().tolist()
 game_list.insert(0, "")
-selected_game = st.selectbox("🎮 Type in game name:", game_list)
+
+# Add custom styling for the label (using markdown with custom HTML)
 st.markdown('<p style="font-size: 30px; font-weight: bold; color: white;">🎮 Type in game name:</p>', unsafe_allow_html=True)
 
+# Select a game
+selected_game = st.selectbox("", game_list)
+
+# If a game is selected, display recommendations
 if selected_game:
     name, recs = recommend(selected_game)
     if recs.empty:
@@ -121,6 +127,7 @@ if selected_game:
     else:
         st.subheader(f"🎯 Recommendations for '{name}':")
 
+        # Create columns for the recommendation display
         col1, col2 = st.columns([1, 2])
 
         with col1:
@@ -129,6 +136,7 @@ if selected_game:
                 if st.button(row['Name'], key=f"select_{row['AppID']}"):
                     st.session_state['selected_game'] = row['Name']
 
+        # If a game is selected, show more details
         if 'selected_game' in st.session_state:
             selected_row = recs[recs['Name'] == st.session_state['selected_game']]
             if not selected_row.empty:
