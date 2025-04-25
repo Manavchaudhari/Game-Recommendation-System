@@ -9,7 +9,7 @@ body {
 /* Transparent app layer */
 .stApp {
     background: transparent;
-    background-image: url("/public/steam.jpg");
+    background-image: url("https://www.pexels.com/photo/black-gaming-console-194511/");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
