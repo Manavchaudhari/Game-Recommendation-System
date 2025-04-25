@@ -107,7 +107,7 @@ st.markdown(
 )
 
 # === UI ===
-st.title("<p style='color: black;'> 🎮 Steam Game Recommendation System">)
+st.title('<p style="color: black;"> 🎮 Steam Game Recommendation System</p>')
 
 # Prepare the game list
 game_list = df_filtered['Name'].dropna().sort_values().tolist()
