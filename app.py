@@ -101,6 +101,9 @@ st.markdown(
     .streamlit-expanderHeader, .stButton, .stMarkdown, .stText, .stTitle, .stSubheader, .stTextInput, .stSelectbox, .stCheckbox {
         color: white !important;  /* Force specific text components to be white */
     }
+    .stSelectbox label {
+        font-size: 40px !important;  /* Adjust the font size as needed */
+    }
     </style>
     """,
     unsafe_allow_html=True
