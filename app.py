@@ -7,19 +7,9 @@ from sklearn.metrics.pairwise import linear_kernel
 # Set the page configuration (MUST be the first Streamlit command)
 st.set_page_config(page_title="Game Recommendation System", layout="wide")
 
-# Inject Custom CSS (Fix for Streamlit UI layout)
-st.markdown(
-    """
-    <style>
-    .main {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    </style>
-    """, 
-    unsafe_allow_html=True
-)
+# Inject custom styles
+with open("styles.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Load data
 @st.cache_data
