@@ -31,7 +31,7 @@ video_html = '''
     </video>
 '''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(video_html, unsafe_allow_html=True)
 
 # Inject custom styles
 with open("styles.css") as f:
