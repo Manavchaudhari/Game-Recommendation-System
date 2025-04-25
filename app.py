@@ -23,6 +23,11 @@ video_html = '''
     .stApp {
       background: transparent;
     }
+
+/* Remove background from header */
+    [data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0);
+    }
     </style>	
 
     <video autoplay muted loop id="myVideo">
