@@ -111,7 +111,7 @@ st.title("🎮 Steam Game Recommendation System")
 
 game_list = df_filtered['Name'].dropna().sort_values().tolist()
 game_list.insert(0, "")
-st.markdown('<p style="font-size: 30px; font-weight: bold; color: white;">🎮 Type in game name:</p>', unsafe_allow_html=True)
+selected_game = st.markdown('<p style="font-size: 30px; font-weight: bold; color: white;">🎮 Type in game name:</p>', unsafe_allow_html=True)
 
 if selected_game:
     name, recs = recommend(selected_game)
