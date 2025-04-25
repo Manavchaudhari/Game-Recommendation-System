@@ -9,32 +9,32 @@ st.set_page_config(page_title="Game Recommendation System", layout="wide")
 
 # === BACKGROUND IMAGE INJECTION ===
 video_html = '''
-    <style>
-    #myVideo {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%; 
-      min-height: 100%;
-      z-index: -1;
-      object-fit: cover;
-    }
+<style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
 
-    .stApp {
-      background: transparent;
-    }
-
+.stApp {
+  background: transparent;
+}
 
 /* Remove background from header */
 [data-testid="stHeader"] {
   background-color: rgba(0, 0, 0, 0);
 }
-    </style>	
 
-    <video autoplay muted loop id="myVideo">
-      <source src="https://static.moewalls.com/videos/preview/2024/steam-delivery-girl-winter-sale-2024-preview.webm">
-      Your browser does not support HTML5 video.
-    </video>
+</style>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://static.moewalls.com/videos/preview/2024/steam-delivery-girl-winter-sale-2024-preview.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video>
 '''
 
 st.markdown(video_html, unsafe_allow_html=True)
