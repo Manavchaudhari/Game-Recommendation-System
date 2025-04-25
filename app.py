@@ -8,20 +8,15 @@ from sklearn.metrics.pairwise import linear_kernel
 st.set_page_config(page_title="Game Recommendation System", layout="wide")
 
 # === BACKGROUND IMAGE INJECTION ===
-page_bg_img = """
+page_bg_img = '''
 <style>
-[data-testid="stAppViewContainer"] {
-    background-image: url("https://moewalls.com/wp-content/uploads/2024/12/steam-delivery-girl-winter-sale-2024-thumb.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-[data-testid="stHeader"] {
-    background: rgba(0, 0, 0, 0);
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
 }
 </style>
-"""
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Inject custom styles
 with open("styles.css") as f:
