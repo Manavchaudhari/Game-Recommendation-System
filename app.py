@@ -26,7 +26,7 @@ video_html = '''
     </style>	
 
     <video autoplay muted loop id="myVideo">
-      <source src="https://static.moewalls.com/videos/preview/2024/steam-delivery-girl-winter-sale-2024-preview.webm" type="video/webm">
+      <source src="https://static.moewalls.com/videos/preview/2024/steam-delivery-girl-winter-sale-2024-preview.webm">
       Your browser does not support HTML5 video.
     </video>
 '''
