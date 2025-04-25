@@ -11,7 +11,7 @@ st.set_page_config(page_title="Game Recommendation System", layout="wide")
 page_bg_img = '''
 <style>
 body {
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+ background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
                       url("https://moewalls.com/wp-content/uploads/2024/12/steam-delivery-girl-winter-sale-2024-thumb.jpg");
 }
 [data-testid="stHeader"] {
