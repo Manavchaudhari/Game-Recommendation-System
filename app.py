@@ -7,6 +7,22 @@ from sklearn.metrics.pairwise import linear_kernel
 # Set the page configuration (MUST be the first Streamlit command)
 st.set_page_config(page_title="Game Recommendation System", layout="wide")
 
+# === BACKGROUND IMAGE INJECTION ===
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://images.unsplash.com/photo-1549921296-3a6b154f4b2e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+[data-testid="stHeader"] {
+    background: rgba(0, 0, 0, 0);
+}
+</style>
+"""
+
 # Inject custom styles
 with open("styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
