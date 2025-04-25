@@ -11,7 +11,7 @@ st.set_page_config(page_title="Game Recommendation System", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://images.unsplash.com/photo-1582642880428-3e2c04ad14ec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://moewalls.com/wp-content/uploads/2024/12/steam-delivery-girl-winter-sale-2024-thumb.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
