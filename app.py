@@ -11,7 +11,7 @@ st.set_page_config(page_title="Game Recommendation System", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://images.unsplash.com/photo-1549921296-3a6b154f4b2e");
+    background-image: url("https://unsplash.com/photos/red-and-black-steel-frame-wQfV9njQxW4");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
