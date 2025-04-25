@@ -50,4 +50,4 @@ streamlit run app.py
 
 ## Credits
 
-- Background Video: ["Steam Delivery Girl Winter Sale 2024 Live Wallpaper"](https://moewalls.com/others/steam-delivery-girl-winter-sale-2024-live-wallpaper/) by [X @nemupanart](https://x.com/nemupanart)
+- Background Video: ["Steam Delivery Girl Winter Sale 2024"](https://moewalls.com/others/steam-delivery-girl-winter-sale-2024-live-wallpaper/) by [X @nemupanart](https://x.com/nemupanart)
