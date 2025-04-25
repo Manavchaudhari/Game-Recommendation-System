@@ -128,7 +128,7 @@ if selected_game:
     if recs.empty:
         st.error("No recommendations found.")
     else:
-        st.subheader(f"🎯 Recommendations for '{name}':")
+        st.markdown(f'<p style="font-size: 24px; font-weight: bold; color: #222222; text-shadow: 2px 2px 4px #ffffff;">🎯 Recommendations for {name}:</p>', unsafe_allow_html=True)
 
         # Create columns for the recommendation display
         col1, col2 = st.columns([1, 2])
