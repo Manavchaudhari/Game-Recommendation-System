@@ -91,6 +91,21 @@ def recommend(name, num=5):
     similar_indices = cosine_similarities.argsort()[-(num + 1):-1][::-1]
     return name, df_filtered.iloc[similar_indices]
 
+# Inject custom CSS to set all text to white regardless of system settings
+st.markdown(
+    """
+    <style>
+    body {
+        color: white !important;  /* Force all text to be white */
+    }
+    .streamlit-expanderHeader, .stButton, .stMarkdown, .stText, .stTitle, .stSubheader, .stTextInput, .stSelectbox, .stCheckbox {
+        color: white !important;  /* Force specific text components to be white */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # === UI ===
 st.title("🎮 Steam Game Recommendation System")
 
