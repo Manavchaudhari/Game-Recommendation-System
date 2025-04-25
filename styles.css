@@ -1,0 +1,118 @@
+/* General body styling with background image */
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Transparent app layer */
+.stApp {
+    background: transparent;
+    background-image: url('steam.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* Optional dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Container spacing */
+.block-container {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Recommendation card styling */
+.recommendation-card {
+    background-color: #3b3f46;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Game title */
+.recommendation-card h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Game image */
+.recommendation-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ffffff10;
+}
+
+/* Steam button */
+.steam-button {
+    background-color: #1a9f60;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.steam-button:hover {
+    background-color: #18c776;
+}
+
+/* Info block styling */
+.recommendation-card .price,
+.recommendation-card .positive-reviews,
+.recommendation-card .description,
+.recommendation-card .tags {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Dropdown styling */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: #2c2f34;
+    color: white;
+}
+
+/* Recommendation buttons */
+button[kind="secondary"] {
+    white-space: normal !important;
+    text-align: center !important;
+    padding: 10px !important;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    background-color: #444 !important;
+    color: white !important;
+    transition: background-color 0.3s ease;
+}
+
+button[kind="secondary"]:hover {
+    background-color: #555 !important;
+}
