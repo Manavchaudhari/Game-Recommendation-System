@@ -101,9 +101,6 @@ st.markdown(
     .streamlit-expanderHeader, .stButton, .stMarkdown, .stText, .stTitle, .stSubheader, .stTextInput, .stSelectbox, .stCheckbox {
         color: white !important;  /* Force specific text components to be white */
     }
-    .stSelectbox label {
-        font-size: 40px !important;  /* Adjust the font size as needed */
-    }
     </style>
     """,
     unsafe_allow_html=True
@@ -114,7 +111,7 @@ st.title("🎮 Steam Game Recommendation System")
 
 game_list = df_filtered['Name'].dropna().sort_values().tolist()
 game_list.insert(0, "")
-selected_game = st.selectbox("🎮 Type in game name:", game_list)
+st.markdown('<p style="font-size: 30px; font-weight: bold; color: white;">🎮 Type in game name:</p>', unsafe_allow_html=True)
 
 if selected_game:
     name, recs = recommend(selected_game)
