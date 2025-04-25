@@ -114,7 +114,7 @@ game_list = df_filtered['Name'].dropna().sort_values().tolist()
 game_list.insert(0, "")
 
 # Add custom styling for the label (using markdown with custom HTML)
-st.markdown('<p style="font-size: 24px">🔴 Type in game name:</p>', unsafe_allow_html=True)
+st.markdown('<p style="font-size: 24px; font-weight: bold; color: black;">🔴 Type in game name:</p>', unsafe_allow_html=True)
 
 # Select a game
 selected_game = st.selectbox("", game_list)
