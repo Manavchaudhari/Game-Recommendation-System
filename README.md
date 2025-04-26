@@ -33,6 +33,7 @@ This is a **Steam Game Recommendation System** built with **Streamlit** and **sc
 ```bash
    git clone https://github.com/yourusername/steam-game-recommendation.git
 ```
+   Dataset: https://www.kaggle.com/datasets/fronkongames/steam-games-dataset
    
 2. Move to the project direcotry
 
